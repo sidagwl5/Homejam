@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
       objectFit: "cover",
       objectPosition: "top center",
       [theme.breakpoints.down('xs')]: {
-          height: '75%'
+          height: '80%',
+          objectPosition: '54% 50%'
       } 
     },
   },
@@ -92,7 +93,9 @@ const WallpaperSection = () => {
               artists, and never miss out.
             </p>
           </div>
+          <div style={{ width: '100%', overflowX: 'auto' }}>
            <CardSection />
+          </div> 
         </Container>
       </div>
     </div>

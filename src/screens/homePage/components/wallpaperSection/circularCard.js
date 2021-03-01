@@ -2,12 +2,16 @@ import React from "react";
 import wallpaperSectionCardData from "../../../../staticFiles/data/wallpaperSectionCardData";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     width: "100%",
     justifyContent: "space-between",
     minWidth: "900px",
+    [theme.breakpoints.down('xs')]: {
+      padding: '10px 0px',
+      minWidth: '650px'
+    },
   },
   card: {
     position: "relative",
@@ -20,6 +24,11 @@ const useStyles = makeStyles(() => ({
     justifyContent: "center",
     alignItems: "center",
     cursor: 'pointer',
+    [theme.breakpoints.down('xs')]: {
+      width: "144px",
+      height: "144px",
+      marginRight: '17px'
+    },
     "&:hover": {
       backgroundColor: 'rgba(8, 14, 30, 0.5)'  
     },
@@ -28,7 +37,10 @@ const useStyles = makeStyles(() => ({
       fontStyle: "normal",
       fontWeight: "normal",
       fontSize: "24px",
-      margin: '5px 0px'
+      margin: '5px 0px',
+      [theme.breakpoints.down('xs')]: {
+        fontSize: '21px'
+      },
     },
     "& p:nth-child(3)": {
       fontFamily: "Nunito",
@@ -36,6 +48,9 @@ const useStyles = makeStyles(() => ({
       fontWeight: "normal",
       fontSize: "16px",
       color: "rgba(255, 255, 255, 0.5)",
+      [theme.breakpoints.down('xs')]: {
+        fontSize: '13px'
+      },
     },
   },
 }));
