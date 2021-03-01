@@ -13,9 +13,12 @@ const useStyles = makeStyles((theme) => ({
     "& img": {
       position: "relative",
       width: "100%",
-      height: "85%",
+      height: '85%',
       objectFit: "cover",
       objectPosition: "top center",
+      [theme.breakpoints.down('xs')]: {
+          height: '75%'
+      } 
     },
   },
   root_child1: {
