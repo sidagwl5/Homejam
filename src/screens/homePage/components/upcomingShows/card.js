@@ -4,8 +4,10 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(() => ({
   root: {
+    position: 'relative',
     display: "flex",
     justifyContent: "space-between",
+    padding: '10px',
     minWidth: "1140px",
   },
   card: {

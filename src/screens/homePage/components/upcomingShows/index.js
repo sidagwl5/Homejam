@@ -17,8 +17,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-evenly",
-    overflow: "hidden",
-    padding: "10px 20px"
+    padding: "10px 20px",
   },
   SectionFooterPara: {
     fontFamily: "Nunito",
@@ -41,7 +40,9 @@ const UpcomingShows = () => {
           )}
         />
 
+       <div style={{ width: '100%', overflowX: 'auto' }}>  
         <CardSection />
+       </div> 
       </Container>
     </div>
   );
