@@ -10,13 +10,13 @@ export default [
     url: require("../images/Calendar.svg").default,
   },
   {
-    label: "Meetings",
-    count: "234",
+    label: "Users",
+    count: "+10K",
     url: require("../images/Calendar.svg").default,
   },
   {
-    label: "Favourites",
-    count: "543",
+    label: "Views every day",
+    count: "+2",
     url: require("../images/Calendar.svg").default,
   },
 ];

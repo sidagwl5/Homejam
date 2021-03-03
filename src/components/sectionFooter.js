@@ -11,6 +11,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     flexDirection: "row",
     margin: '10px 0px',
+    [theme.breakpoints.down("xs")]: {
+      padding: '0px 20px'
+    },
     "& div": {
       position: "relative",
       display: "flex",
@@ -19,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
       "& p": {
         fontFamily: "Libre Baskerville",
         fontStyle: "normal",
-        fontWeight: "normal",
+        fontWeight: 400,
         fontSize: "32px",
         [theme.breakpoints.down('xs')]: {
           fontSize: '20px'

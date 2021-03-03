@@ -9,6 +9,7 @@ const useStyles = makeStyles(() => ({
     justifyContent: "space-between",
     padding: '10px',
     minWidth: "1140px",
+    minHeight: '387px'
   },
   card: {
     position: "relative",
@@ -26,8 +27,8 @@ const useStyles = makeStyles(() => ({
       position: "absolute",
       width: "100%",
       height: "100%",
-      left: "7px",
-      top: "-7px",
+      left: "8px",
+      top: "-8px",
       borderRadius: "8px",
       background: "linear-gradient(163.41deg, #301A68 0.11%, #234C97 170.69%)",
       display: "flex",
@@ -54,7 +55,7 @@ const useStyles = makeStyles(() => ({
       "& p:nth-child(2)": {
         fontFamily: "Libre Baskerville",
         fontStyle: "normal",
-        fontWeight: "bold",
+        fontWeight: 700,
         fontSize: "20px",
         color: "white",
         position: "relative",
@@ -66,7 +67,7 @@ const useStyles = makeStyles(() => ({
         fontStyle: "normal",
         fontWeight: "600",
         fontSize: "12px",
-        padding: "2px 8px",
+        padding: "1px 6px",
         background: "#E5C558",
         borderRadius: "1px",
         color: "#682F26",

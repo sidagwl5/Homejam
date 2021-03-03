@@ -9,35 +9,45 @@ const useStyles = makeStyles((theme) => ({
   root: {
     position: "relative",
     width: "100%",
-    minHeight: "70vh",
+    minHeight: "50vh",
     backgroundColor: "#0A0B1A",
     display: "flex",
   },
   container: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-evenly",
+    justifyContent: "flex-start",
     overflow: "hidden",
-    padding: "10px 20px",
+    padding: "70px 40px",
+    paddingTop: '0px',
      [theme.breakpoints.down('xs')]: {
-      padding: '10px'
+      padding: '30px 0px'
+    },
+  },
+  container_child: {
+    width: "100%",
+    overflowX: "auto",
+    position: "relative",
+    top: "30px",
+    [theme.breakpoints.down("xs")]: {
+      padding: "0px",
+      top: '10px'
     },
   },
   "review-header-right": {
     display: "flex",
     alignItems: "center",
-    justifyContent: "space-evenly",
+    justifyContent: "space-between",
     position: "relative",
     fontFamily: "Nunito",
     fontStyle: "normal",
     fontWeight: 600,
     fontSize: "16px",
     color: "rgba(255, 255, 255, 0.5)",
-    width: "200px",
+    width: "120px",
     height: "100%",
     [theme.breakpoints.down('xs')]: {
       display: 'none !important',
-      backgroundColor: 'yellow'
     }
   },
 }));
@@ -69,6 +79,7 @@ const UpcomingShows = () => {
                   style={{
                     transform: "rotate(-180deg)",
                     cursor: "pointer",
+                    opacity: '0.8'
                   }}
                   width="19"
                   height="14"
@@ -82,7 +93,7 @@ const UpcomingShows = () => {
                   />
                 </svg>
                 <svg
-                  style={{ cursor: "pointer" }}
+                  style={{ cursor: "pointer", opacity: '0.8' }}
                   width="19"
                   height="14"
                   viewBox="0 0 19 14"
@@ -100,11 +111,7 @@ const UpcomingShows = () => {
         />
 
         <div
-          style={{
-            position: "relative",
-            width: "100%",
-            minHeight: "calc(100% - 250px)"
-          }}
+         className={classes.container_child}
         >
           <CardSection />
         </div>

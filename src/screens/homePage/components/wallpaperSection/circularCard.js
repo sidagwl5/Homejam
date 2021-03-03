@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     width: "100%",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
     minWidth: "900px",
     [theme.breakpoints.down('xs')]: {
       padding: '10px 0px',
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
       fontStyle: "normal",
       fontWeight: "normal",
       fontSize: "24px",
-      margin: '5px 0px',
+      margin: '9px 0px',
       [theme.breakpoints.down('xs')]: {
         fontSize: '21px'
       },
