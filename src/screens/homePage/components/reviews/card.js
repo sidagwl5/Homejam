@@ -11,6 +11,10 @@ const useStyles = makeStyles((theme) => ({
     padding: "10px",
     minWidth: "1140px",
     boxSizing: "border-box",
+    [theme.breakpoints.down("xs")]: {
+      justifyContent: 'flex-start',
+      minWidth: "1000px"
+    },
   },
   card: {
     position: "relative",
