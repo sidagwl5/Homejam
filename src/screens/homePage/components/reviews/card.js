@@ -4,32 +4,32 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    position: 'relative',
+    position: "relative",
     display: "flex",
     justifyContent: "space-between",
-    width: '100%',
-    padding: '10px',
-    minWidth: '1140px',
-    boxSizing: 'border-box'
+    width: "100%",
+    padding: "10px",
+    minWidth: "1140px",
+    boxSizing: "border-box",
   },
   card: {
     position: "relative",
     minWidth: "200px",
-    width: '360px',
+    width: "360px",
     minHeight: "248px",
     boxShadow: "0px 4px 16px rgba(0, 0, 0, 0.25)",
     background: "#0A0B1A",
     boxSizing: "border-box",
     borderRadius: "16px",
-    margin: '20px 0px',
-    [theme.breakpoints.down('md')]: {
-      margin: '20px'
-    }, 
-    [theme.breakpoints.down('xs')]: {
-      margin: '10px',
-      width: '328px',
+    margin: "20px 0px",
+    [theme.breakpoints.down("md")]: {
+      margin: "20px",
+    },
+    [theme.breakpoints.down("xs")]: {
+      margin: "10px",
+      width: "328px",
       height: "232px",
-      minHeight: '232px'
+      minHeight: "232px",
     },
     "&::before": {
       content: '""',
@@ -54,8 +54,8 @@ const useStyles = makeStyles((theme) => ({
       padding: "25px",
       borderRadius: "16px",
       boxSizing: "border-box",
-      [theme.breakpoints.down('md')]: {
-        padding: '25px 15px'
+      [theme.breakpoints.down("md")]: {
+        padding: "25px 15px",
       },
       "& div:nth-child(1)": {
         position: "relative",
@@ -63,31 +63,49 @@ const useStyles = makeStyles((theme) => ({
         height: "48px",
         display: "flex",
         alignItems: "center",
-        border: 'none',
-        padding: '0px',
+        border: "none",
+        padding: "0px",
         "& img": { position: "relative", width: "48px", height: "48px" },
-        "& div": {
+        "& div:nth-child(2)": {
           position: "relative",
-          margin: "0px 20px",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "space-between",
+          justifyContent: "center",
+          alignItems: "flex-start",
+          left: "20px",
+          "& span": {
+            position: "relative",
+            left: "0px",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            padding: '0px',
+            height: '20px',
+            top: '5px',
+            '& img': {
+              position: 'relative',
+              objectFit: 'contain',
+              transform: "scale(0.5)",
+              left: "-12px",
+            },
+            "& p:nth-child(2)": {
+              fontFamily: "Nunito",
+              fontStyle: "normal",
+              fontWeight: 600,
+              fontSize: "11px",
+              textTransform: "uppercase",
+              color: "#E5C558",
+              position: "relative",
+              top: "0px",
+              opacity: 0.7,
+              left: '-15px'
+            },
+          },
           "& p:nth-child(1)": {
             fontFamily: "Quattrocento",
             fontStyle: "normal",
             fontWeight: 700,
             fontSize: "16px",
-          },
-          "& p:nth-child(2)": {
-            fontFamily: "Nunito",
-            fontStyle: "normal",
-            fontWeight: 600,
-            fontSize: "11px",
-            textTransform: "uppercase",
-            color: "#E5C558",
-            position: 'relative',
-            top: '7px',
-            opacity: 0.7,
           },
         },
       },
@@ -99,8 +117,8 @@ const useStyles = makeStyles((theme) => ({
         textTransform: "none",
         color: "white",
         opacity: 0.9,
-        top: '22px',
-        position: 'relative'
+        top: "22px",
+        position: "relative",
       },
     },
   },
@@ -117,10 +135,12 @@ const Card = () => {
               <img src={cardData.url} />
               <div>
                 <p>{cardData.name}</p>
-                <p>
-                  <span class="us" />
-                  {cardData.location}
-                </p>
+                <span>
+                  <img
+                    src={cardData.flag}
+                  />
+                  <p>{cardData.location}</p>
+                </span>
               </div>
             </div>
             <p>{cardData.description}</p>

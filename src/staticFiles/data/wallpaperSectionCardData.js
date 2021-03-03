@@ -3,6 +3,7 @@ export default [
     label: "Likes everyday",
     count: "456",
     url: require("../images/Like.svg").default,
+    progress: require("../images/Subtract.svg").default
   },
   {
     label: "Online Events",
