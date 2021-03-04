@@ -1,4 +1,4 @@
-export default ({ left }) => (
+const Arrow = ({ left }) => (
   <svg
     style={{
       transform: `rotate(${left ? "180deg" : "0deg"})`,
@@ -17,3 +17,5 @@ export default ({ left }) => (
     />
   </svg>
 );
+
+export default Arrow;

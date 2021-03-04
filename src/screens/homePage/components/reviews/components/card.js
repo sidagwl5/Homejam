@@ -10,11 +10,11 @@ const Card = () => {
         <div className={classes.card}>
           <div>
             <div>
-              <img src={cardData.url} />
+              <img alt="avatar" src={cardData.url} />
               <div>
                 <p>{cardData.name}</p>
                 <span>
-                  <img src={cardData.flag} />
+                  <img alt="flag" src={cardData.flag} />
                   <p>{cardData.location}</p>
                 </span>
               </div>

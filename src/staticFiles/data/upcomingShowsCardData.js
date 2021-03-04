@@ -1,5 +1,5 @@
 
-export default [
+const data = [
     {
       genre: "Folk",
       name: "Benny Dayal",
@@ -22,3 +22,5 @@ export default [
       fill: require("../images/Ticket.svg").default
     },
   ];
+
+  export default data;

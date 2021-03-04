@@ -15,7 +15,7 @@ const subtract = () => (
   </svg>
 );
 
-export default [
+const data = [
   {
     label: "Likes everyday",
     count: "456",
@@ -38,3 +38,6 @@ export default [
     url: require("../images/Calendar.svg").default,
   },
 ];
+
+
+export default data;

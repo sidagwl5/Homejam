@@ -10,22 +10,24 @@ const Card = () => {
     <div className={classes.root}>
       {upcomingShowsCardData.map((cardData) => (
         <div className={classes.card}>
-          <img src={cardData.url} />
+          <img alt="display picture" src={cardData.url} />
           <div>
             <span>{cardData.genre}</span>
             <p>{cardData.name}</p>
             <div>
               <div>
                 <p>More Info</p>
-                <img src={arrow} />
+                <img alt="arrow" src={arrow} />
               </div>
               {cardData.fill ? (
                 <img
+                  alt="unsave"
                   style={{ width: "18.88px", cursor: "pointer" }}
                   src={cardData.fill}
                 />
               ) : (
                 <img
+                  alt="save"
                   style={{ width: "18.88px", cursor: "pointer" }}
                   src={union}
                 />

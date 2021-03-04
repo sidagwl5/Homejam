@@ -1,4 +1,4 @@
-export default [
+const data = [
   {
     location: "Palo Alto, CA",
     name: "Hellen Jummy",
@@ -27,3 +27,5 @@ export default [
     laoreet adipiscing. `,
   },
 ];
+
+export default data;

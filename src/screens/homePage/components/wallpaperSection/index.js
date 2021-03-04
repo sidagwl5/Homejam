@@ -19,7 +19,7 @@ const WallpaperSection = () => {
   const classes = mainStyles();
   return (
     <div className={classes.root}>
-      <img src={wallpaper} />
+      <img alt="wallpaper" src={wallpaper} />
       <div className={classes.root_child1}>
         <Container className={classes.container}>
           <Navbar />

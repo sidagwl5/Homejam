@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
-import SearchIcon from "@material-ui/icons/Search";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 
 const useStyles = makeStyles((theme) => ({
@@ -76,7 +75,7 @@ const Navbar = () => {
   return (
     <div className={classes.root}>
       <div>
-        <img src={require("../staticFiles/images/logo.png").default} />
+        <img alt="logo" src={require("../staticFiles/images/logo.png").default} />
       </div>
 
       <div>
@@ -107,9 +106,10 @@ const Navbar = () => {
         <Button>Search</Button>
         <Button>Help</Button>
         <Button>Account</Button>
-        <img src={require("../staticFiles/images/basket.svg").default} />
+        <img alt="basket" src={require("../staticFiles/images/basket.svg").default} />
 
         <img
+          alt="menu"
           className={classes.hamburger}
           src={require("../staticFiles/images/Hamburger.svg").default}
         />
