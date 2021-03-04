@@ -1,6 +1,6 @@
 import React from "react";
-import reviewSectionCardData from "../../../../staticFiles/data/reviewSectionCardData";
-import { cardStyles } from "./styles";
+import reviewSectionCardData from "../../../../../staticFiles/data/reviewSectionCardData";
+import { cardStyles } from "../styles";
 
 const Card = () => {
   const classes = cardStyles();
@@ -14,9 +14,7 @@ const Card = () => {
               <div>
                 <p>{cardData.name}</p>
                 <span>
-                  <img
-                    src={cardData.flag}
-                  />
+                  <img src={cardData.flag} />
                   <p>{cardData.location}</p>
                 </span>
               </div>

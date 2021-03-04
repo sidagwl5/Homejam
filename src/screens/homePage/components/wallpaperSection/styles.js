@@ -85,6 +85,7 @@ export const cardStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     width: "100%",
+    paddingBottom: "10px",
     justifyContent: "space-around",
     minWidth: "900px",
     [theme.breakpoints.down("xs")]: {
@@ -95,6 +96,7 @@ export const cardStyles = makeStyles((theme) => ({
   card: {
     position: "relative",
     width: "208px",
+    // overflow: 'hidden',
     height: "208px",
     border: "1px solid rgba(255, 255, 255, 0.2)",
     borderRadius: "50%",
@@ -107,6 +109,28 @@ export const cardStyles = makeStyles((theme) => ({
       width: "144px",
       height: "144px",
       marginRight: "17px",
+    },
+    "& img:nth-child(1)": {
+      position: "absolute",
+      width: "176.28px",
+      height: "208px",
+      backgroundSize: "contain",
+      top: "-1px",
+      right: "-1px",
+      [theme.breakpoints.down("xs")]: {
+        width: "120px",
+        height: "143px",
+      }
+    },
+    "& svg": {
+      position: 'absolute',
+      top: "-1px",
+      right: "-2px",
+      [theme.breakpoints.down("xs")]: {
+        width: "122.3px",
+        height: "144.3px",
+        top: '-1.5px',
+      }
     },
     "&:hover": {
       backgroundColor: "rgba(8, 14, 30, 0.5)",

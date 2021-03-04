@@ -35,9 +35,7 @@ const useStyles = makeStyles((theme) => ({
 const SectionFooter = ({ title, RightComponent }) => {
   const classes = useStyles();
   return (
-    <div style={{
-    justifyContent: "space-between",
-    }} className={classes.root}>
+    <div style={{ justifyContent: "space-between" }} className={classes.root}>
       <div>
         <p>{title}</p>
         <span

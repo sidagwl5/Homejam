@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
-import CardSection from "./card";
+import CardSection from "./components/card";
 import SectionFooter from "../../../../components/sectionFooter";
 import { mainStyles } from "./styles";
 

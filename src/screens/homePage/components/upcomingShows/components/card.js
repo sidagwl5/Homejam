@@ -1,6 +1,8 @@
 import React from "react";
-import upcomingShowsCardData from "../../../../staticFiles/data/upcomingShowsCardData";
-import { cardStyles } from "./styles";
+import upcomingShowsCardData from "../../../../../staticFiles/data/upcomingShowsCardData";
+import arrow from "../../../../../staticFiles/images/rightArrow.svg";
+import union from "../../../../../staticFiles/images/Union.svg";
+import { cardStyles } from "../styles";
 
 const Card = () => {
   const classes = cardStyles();
@@ -15,12 +17,7 @@ const Card = () => {
             <div>
               <div>
                 <p>More Info</p>
-                <img
-                  src={
-                    require("../../../../staticFiles/images/rightArrow.svg")
-                      .default
-                  }
-                />
+                <img src={arrow} />
               </div>
               {cardData.fill ? (
                 <img
@@ -30,9 +27,7 @@ const Card = () => {
               ) : (
                 <img
                   style={{ width: "18.88px", cursor: "pointer" }}
-                  src={
-                    require("../../../../staticFiles/images/Union.svg").default
-                  }
+                  src={union}
                 />
               )}
             </div>
