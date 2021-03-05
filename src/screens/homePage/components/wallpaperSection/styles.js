@@ -135,25 +135,25 @@ export const cardStyles = makeStyles((theme) => ({
     "&:hover": {
       backgroundColor: "rgba(8, 14, 30, 0.5)",
     },
-    "& p:nth-child(2)": {
-      fontFamily: "Libre Baskerville",
-      fontStyle: "normal",
-      fontWeight: "normal",
-      fontSize: "24px",
-      margin: "9px 0px",
-      [theme.breakpoints.down("xs")]: {
-        fontSize: "21px",
-      },
+  },
+  stats: {
+    fontFamily: "Libre Baskerville",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: "24px",
+    margin: "9px 0px",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "21px",
     },
-    "& p:nth-child(3)": {
-      fontFamily: "Nunito",
-      fontStyle: "normal",
-      fontWeight: "normal",
-      fontSize: "16px",
-      color: "rgba(255, 255, 255, 0.5)",
-      [theme.breakpoints.down("xs")]: {
-        fontSize: "13px",
-      },
+  },
+  subtitle: {
+    fontFamily: "Nunito",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: "16px",
+    color: "rgba(255, 255, 255, 0.5)",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "13px",
     },
   },
 }));

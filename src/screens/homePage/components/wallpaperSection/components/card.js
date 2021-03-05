@@ -14,8 +14,8 @@ const CircularCard = () => {
             style={{ width: "32px", height: "32px", position: "relative" }}
             src={card.url}
           />
-          <p>{card.count}</p>
-          <p>{card.label}</p>
+          <p className={classes.stats}>{card.count}</p>
+          <p className={classes.subtitle}>{card.label}</p>
         </div>
       ))}
     </div>
