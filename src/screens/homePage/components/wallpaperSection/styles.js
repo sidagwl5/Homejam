@@ -141,7 +141,7 @@ export const cardStyles = makeStyles((theme) => ({
     fontStyle: "normal",
     fontWeight: "normal",
     fontSize: "24px",
-    margin: "9px 0px",
+    margin: "6px 0px",
     [theme.breakpoints.down("xs")]: {
       fontSize: "21px",
     },
